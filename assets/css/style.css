@@ -1,0 +1,55 @@
+/* ========================================================= */
+/* style.css - Estilos personalizados y animaciones          */
+/* ========================================================= */
+
+/* -------------------------------------- */
+/* Animación del Film Strip (Carrusel)    */
+/* -------------------------------------- */
+@keyframes scroll {
+    0% {
+        /* Estado inicial */
+        transform: translateX(0);
+    }
+    100% {
+        /* El 50% de traslación es para simular el loop 
+           infinito, ya que duplicamos el contenido en JS. */
+        transform: translateX(-50%); 
+    }
+}
+
+.animate-scroll {
+    /* Aplica la animación: 40s de duración, lineal, infinito */
+    animation: scroll 40s linear infinite; 
+}
+
+.animate-scroll:hover {
+    /* Pausa la animación cuando el mouse está sobre ella */
+    animation-play-state: paused;
+}
+
+/* -------------------------------------- */
+/* Utilidades y Comportamiento           */
+/* -------------------------------------- */
+
+/* Asegura un scroll suave cuando se hace clic en los enlaces de navegación */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Clases de utilidad para los colores que Tailwind puede no interpretar en el CDN
+   Estas clases son necesarias para que el diseño se vea como en React/Tailwind. */
+
+.text-amber-700 { color: #b54708; }
+.text-amber-900 { color: #78350f; }
+.text-stone-600 { color: #57534e; }
+.text-stone-700 { color: #44403c; }
+.text-stone-900 { color: #1c1917; }
+.bg-amber-700 { background-color: #b54708; }
+.bg-amber-800 { background-color: #92400e; }
+.bg-amber-50 { background-color: #fffbeb; }
+.bg-stone-50 { background-color: #fafaf9; }
+.bg-stone-800 { background-color: #292524; }
+.bg-stone-900 { background-color: #1c1917; }
+.border-amber-700 { border-color: #b54708; }
+.hover\:bg-amber-50:hover { background-color: #fffbeb; }
+/* Puedes añadir más si notas que algún color o gradiente falla al subirlo */

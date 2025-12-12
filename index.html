@@ -4,166 +4,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Afaf Badawy Fernández - Arquitecta</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* CSS Básico Personalizado */
-        body { font-family: sans-serif; }
-        .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg.jpg') no-repeat center center; /* Reemplaza hero-bg.jpg */
-            background-size: cover;
-            color: white;
-            padding: 8rem 0;
-        }
-        .section-title { margin-bottom: 2rem; }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#hero">AFAF BADAWY F.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
+<body class="min-h-screen bg-stone-50 text-stone-900">
+    
+<div id="film-strip" class="relative w-full bg-black overflow-hidden py-4 border-y-4 border-stone-800">
+    <div class="absolute top-0 left-0 right-0 h-3 flex justify-around">
+        <script>document.write(new Array(40).fill('<div class="w-2 h-2 bg-stone-800 rounded-sm"></div>').join(''));</script>
+    </div>
+    
+    <div id="film-scroll-track" class="flex gap-3 px-6 animate-scroll">
+        
+        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
+            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                <img src="assets/img/slide-1.jpg" alt="Plaza Urbana" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                    <div class="text-white/90 font-light text-lg tracking-wider">PLAZA URBANA</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
+            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                <img src="assets/img/slide-2.png" alt="Centro Cultural" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                    <div class="text-white/90 font-light text-lg tracking-wider">CENTRO CULTURAL</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
+            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                <img src="assets/img/slide-3.jpg" alt="Diseño Interior" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                    <div class="text-white/90 font-light text-lg tracking-wider">DISEÑO INTERIOR</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
+            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-700 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                <img src="assets/img/slide-4.jpg" alt="Integración Territorial" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                    <div class="text-white/90 font-light text-lg tracking-wider">INTEGRACIÓN TERRITORIAL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="absolute bottom-0 left-0 right-0 h-3 flex justify-around">
+        <script>document.write(new Array(40).fill('<div class="w-2 h-2 bg-stone-800 rounded-sm"></div>').join(''));</script>
+    </div>
+</div>
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-light tracking-wide">
+                    <span class="font-semibold text-amber-800">AFAF</span>
+                    <span class="text-stone-600 ml-2">BADAWY</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <button data-id="inicio" onclick="scrollToSection('inicio')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-amber-700 font-medium">Inicio</button>
+                    <button data-id="manifiesto" onclick="scrollToSection('manifiesto')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Manifiesto</button>
+                    <button data-id="experiencia" onclick="scrollToSection('experiencia')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Experiencia</button>
+                    <button data-id="proyectos" onclick="scrollToSection('proyectos')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Proyectos</button>
+                    <button data-id="contacto" onclick="scrollToSection('contacto')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Contacto</button>
+                </div>
+                <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-stone-100">
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x hidden"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200">
+            <div class="px-4 py-4 space-y-3">
+                <button data-id="inicio" onclick="scrollToSection('inicio')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Inicio</button>
+                <button data-id="manifiesto" onclick="scrollToSection('manifiesto')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Manifiesto</button>
+                <button data-id="experiencia" onclick="scrollToSection('experiencia')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Experiencia</button>
+                <button data-id="proyectos" onclick="scrollToSection('proyectos')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Proyectos</button>
+                <button data-id="contacto" onclick="scrollToSection('contacto')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Contacto</button>
             </div>
         </div>
     </nav>
 
-    <header id="hero" class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold">Arquitectura que Inspira y Transforma</h1>
-            <p class="lead mt-4">Diseño consciente y funcional para espacios residenciales y comerciales.</p>
-            <a href="#contacto" class="btn btn-warning btn-lg mt-3">Comienza tu Proyecto Hoy</a>
+    <section id="inicio" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-amber-50 via-stone-50 to-green-50">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-amber-600 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-green-600 rounded-full blur-3xl"></div>
         </div>
-    </header>
-
-    <section id="proyectos" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center section-title">Proyectos Destacados</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="images/proyecto1.jpg" class="card-img-top" alt="Proyecto Residencial">
-                        <div class="card-body">
-                            <h5 class="card-title">Residencial "El Arrayán"</h5>
-                            <p class="card-text">Diseño moderno con enfoque en luz natural y materiales sostenibles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="images/proyecto2.jpg" class="card-img-top" alt="Proyecto Comercial">
-                        <div class="card-body">
-                            <h5 class="card-title">Oficinas "Innovatech"</h5>
-                            <p class="card-text">Espacios corporativos flexibles y eficientes para el trabajo híbrido.</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 md:pt-0">
+            <div class="mb-6 text-sm font-light tracking-widest text-amber-700 uppercase">Arquitecta</div>
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-light mb-6 tracking-tight">
+                <span class="font-semibold text-amber-900">Afaf Badawy</span><br>
+                <span class="text-stone-700">Fernández</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-stone-600 font-light max-w-3xl mx-auto mb-12 leading-relaxed">
+                Donde lo técnico encuentra lo humano
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('proyectos')" class="px-8 py-4 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                    Ver Proyectos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+                <button onclick="scrollToSection('contacto')" class="px-8 py-4 bg-white text-amber-700 rounded-full hover:bg-stone-50 transition-all duration-300 border-2 border-amber-700">
+                    Contacto
+                </button>
+            </div>
         </div>
     </section>
 
-    <section id="sobre-mi" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-title">Afaf Badawy Fernández</h2>
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="images/perfil.jpg" class="img-fluid rounded-circle mb-3" alt="Foto de Perfil" style="max-width: 200px;">
+    <section id="manifiesto" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-light mb-12 text-center text-amber-900">Manifiesto</h2>
+            <div class="space-y-8 text-lg leading-relaxed text-stone-700">
+                <p class="font-light border-l-4 border-amber-600 pl-6 italic text-stone-600">
+                    "La arquitectura es realmente sobre bienestar. Creo que la gente quiere sentir que pertenece a un espacio."
+                    <span class="block mt-2 text-sm font-normal text-amber-700">— Zaha Hadid</span>
+                </p>
+                <p>
+                    A lo largo de mi formación y trayectoria en contextos diversos —comunitarios, rurales, mineros e independientes— comprendí que, aunque cada uno responde a dinámicas, realidades y lenguajes completamente distintos, todos convergen en un mismo punto esencial: <span class="font-medium text-amber-800">el diseño no comienza con una línea, sino con una conversación</span>. Nace de observar la identidad del territorio, de reconocer sus particularidades y de conectar con las necesidades reales de las personas que lo habitan.
+                </p>
+                <p>
+                    Entiendo la arquitectura como <span class="font-medium text-amber-800">un ente articulador entre las personas y su entorno</span>; un puente entre las necesidades colectivas y la capacidad creativa para transformarlas en soluciones pertinentes y significativas.
+                </p>
+                <p>
+                    Me mueven los <span class="font-medium text-amber-800">procesos colectivos</span> y la posibilidad de generar cambios concretos a través de intervenciones con enfoque socio-territorial, orientadas a un desarrollo local sostenible en el tiempo.
+                </p>
+                <p class="text-xl font-light text-center pt-8 text-amber-800">
+                    Creo en una arquitectura cercana y consciente; una arquitectura que dialogue con quienes la habitan y que contribuya al bienestar, al encuentro y a fortalecer la identidad de los territorios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-24 bg-gradient-to-b from-stone-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-light mb-4 text-center text-amber-900">
+                Ámbitos de Dominio Profesional
+            </h2>
+            <p class="text-center text-stone-600 mb-16 max-w-2xl mx-auto">
+                Mi experiencia profesional se articula en tres ámbitos complementarios que convergen en un enfoque técnico, social y territorial.
+            </p>
+            <div class="space-y-16" id="experiencia-grid">
                 </div>
-                <div class="col-md-8">
-                    <p class="lead">Arquitecta de la [Universidad], con [X] años de experiencia enfocada en [Especialidad].</p>
-                    <p>Mi filosofía se basa en la integración armoniosa entre el entorno natural y el diseño funcional, priorizando la sostenibilidad y la calidad de vida del usuario.</p>
+            
+            <div class="mt-20">
+                <h3 class="text-3xl font-light mb-10 text-center text-amber-900">
+                    Formación Continua
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6" id="formacion-grid">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-light mb-16 text-center text-amber-900">
+                Proyectos Seleccionados
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="proyectos-grid">
+                 </div>
+        </div>
+    </section>
+    
+    <section class="py-24 bg-gradient-to-b from-amber-50 to-stone-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-light mb-12 text-center text-amber-900">
+                Arte en Resina Ecológica
+            </h2>
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-medium text-amber-800 mb-4">Mi Práctica Creativa</h3>
+                        <p class="text-stone-700 leading-relaxed mb-4">
+                            Mi práctica creativa se extiende al trabajo con resina ecológica, donde reutilizo materiales para crear piezas artísticas únicas. Esta disciplina paralela refuerza mi compromiso con la <span class="font-medium text-amber-800">sostenibilidad</span> y la capacidad de <span class="font-medium text-amber-800">transformar lo cotidiano en expresión</span>.
+                        </p>
+                        <a href="[LINK AL PORTFOLIO DE RESINA]" target="_blank" class="text-amber-700 hover:text-amber-900 flex items-center gap-1 transition-colors">
+                            Ver Portfolio de Arte
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        </a>
+                    </div>
+                    <div class="w-full md:w-64 h-64 bg-gradient-to-br from-amber-200 via-green-200 to-stone-200 rounded-xl flex items-center justify-center overflow-hidden">
+                         <img src="assets/img/resina-muestra.jpg" alt="Muestra de Arte en Resina" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center section-title">Hablemos de tu Proyecto</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form id="contactForm" action="https://formspree.io/f/[TU_ENDPOINT_AQUI]" method="POST">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-light mb-12 text-center text-amber-900">Conversemos</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-light mb-6 text-stone-800">Información de Contacto</h3>
+                    <div class="space-y-4">
+                        <a href="mailto:abadawyf@gmail.com" class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
+                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                            <span>abadawyf@gmail.com</span>
+                        </a>
+                        <a href="tel:+56930639918" class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
+                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.04-6.04 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3 2h3a2 2 0 0 1 2 2.18 17.02 17.02 0 0 0 1.25 4.86 2 2 0 0 1-1.27 2.17l-.54.21a2 2 0 0 0-.8 2.6L8 20l2 2 6-6 4-4a2 2 0 0 0 0-2.82 2 2 0 0 0 2.82 0z"/></svg></div>
+                            <span>+56 9 3063 9918</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/afaf-balawy-fernandez" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
+                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></div>
+                            <span>LinkedIn</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link opacity-0 group-hover:opacity-100 transition-opacity"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-amber-50 rounded-xl">
+                        <h4 class="font-medium text-amber-900 mb-2">Áreas de Interés</h4>
+                        <ul class="text-sm text-stone-700 space-y-1">
+                            <li>• Gestión y tramitación municipal</li>
+                            <li>• Desarrollo local inclusivo</li>
+                            <li>• Coordinación BIM</li>
+                            <li>• Proyectos con impacto social</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-light mb-6 text-stone-800">Envíame un Mensaje</h3>
+                    <form id="contactForm" action="https://formspree.io/f/[TU_ENDPOINT_AQUI]" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-stone-700 mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all" placeholder="Tu nombre">
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="_replyto" required>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-stone-700 mb-2">Email</label>
+                            <input type="email" id="email" name="_replyto" required class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all" placeholder="tu@email.com">
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Describe tu proyecto</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-stone-700 mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all resize-none" placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
                         </div>
-                        <input type="hidden" name="_subject" value="[CONTACTO WEB] Nuevo Proyecto de Arquitectura">
+                        <input type="hidden" name="_subject" value="[CONTACTO WEB] Nuevo Proyecto de Afaf Badawy">
+
+                        <button type="submit" id="submitButton" class="w-full px-6 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors font-medium">
+                            Enviar Mensaje
+                        </button>
                         
-                        <button type="submit" class="btn btn-warning w-100" id="submitButton">Enviar Mensaje</button>
-                        
-                        <div id="formStatus" class="mt-3 text-center"></div>
+                        <div id="formStatus" class="mt-2 text-sm text-center"></div>
+                        <p class="text-xs text-stone-500 text-center mt-3">
+                            * Mensaje enviado sin backend PHP.
+                        </p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 Afaf Badawy Fernández. Todos los derechos reservados.</p>
-            <div class="mt-2">
-                <a href="[LINKEDIN]" class="text-white me-3">LinkedIn</a>
-                <a href="[INSTAGRAM]" class="text-white">Instagram</a>
+
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left">
+                    <div class="text-xl font-light mb-2">
+                        <span class="font-semibold text-amber-400">AFAF</span>
+                        <span class="ml-2">BADAWY FERNÁNDEZ</span>
+                    </div>
+                    <p class="text-sm text-stone-400">
+                        Arquitecta · Desarrollo Territorial · Gestión Municipal
+                    </p>
+                </div>
+                
+                <div class="flex gap-4">
+                    <a href="mailto:abadawyf@gmail.com" class="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+                    <a href="https://www.linkedin.com/in/afaf-balawy-fernandez" target="_blank" rel="noopener noreferrer" class="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-stone-800 text-center text-sm text-stone-500">
+                <p>© 2024 Afaf Badawy Fernández · Todos los derechos reservados</p>
+                <p class="mt-2">Diseñado con propósito y narrativa</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
-        // --- CÓDIGO JAVASCRIPT PARA EL FORMULARIO AJAX (¡SIN PHP!) ---
-        document.getElementById('contactForm').addEventListener('submit', async function(event) {
-            event.preventDefault(); 
-            
-            const form = event.target;
-            const formStatus = document.getElementById('formStatus');
-            const submitButton = document.getElementById('submitButton');
-            
-            // Desactivar botón y preparar mensaje
-            submitButton.disabled = true;
-            submitButton.textContent = 'Enviando...';
-            formStatus.innerHTML = ''; 
-
-            try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: new FormData(form),
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    formStatus.innerHTML = '<span class="text-success fw-bold">¡Mensaje enviado con éxito! Te contactaremos a la brevedad.</span>';
-                    form.reset(); 
-                } else {
-                    formStatus.innerHTML = '<span class="text-danger">Error. Por favor verifica tus datos e intenta de nuevo.</span>';
-                }
-            } catch (error) {
-                formStatus.innerHTML = '<span class="text-danger">Error de conexión. Intenta más tarde.</span>';
-            } finally {
-                // Restaurar botón después de 3 segundos
-                setTimeout(() => {
-                    submitButton.disabled = false;
-                    submitButton.textContent = 'Enviar Mensaje';
-                }, 3000);
-            }
-        });
+        lucide.createIcons();
     </script>
+    <script src="assets/js/main.js"></script> 
 </body>
 </html>
