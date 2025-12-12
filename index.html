@@ -1,63 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Afaf Badawy Fernández - Arquitecta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body class="min-h-screen bg-stone-50 text-stone-900">
-    
-<div id="film-strip" class="relative w-full bg-black overflow-hidden py-4 border-y-4 border-stone-800">
-    <div class="absolute top-0 left-0 right-0 h-3 flex justify-around">
-        <script>document.write(new Array(40).fill('<div class="w-2 h-2 bg-stone-800 rounded-sm"></div>').join(''));</script>
+
+    <div id="film-strip" class="relative w-full bg-black overflow-hidden py-4 border-y-4 border-stone-800">
+        <div class="absolute top-0 left-0 right-0 h-3 flex justify-around">
+            <script>document.write(new Array(40).fill('<div class="w-2 h-2 bg-stone-800 rounded-sm"></div>').join(''));</script>
+        </div>
+
+        <div id="film-scroll-track" class="flex gap-3 px-6 animate-scroll">
+            //slide-1
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-1.jpg" alt="Plaza Urbana" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">PLAZA URBANA</div>
+                    </div>
+                </div>
+            </div>
+            //slide-2
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-2.png" alt="Plaza Urbana" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">CENTRO CULTURAL</div>
+                    </div>
+                </div>
+            </div>
+            //slide-3
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-3.jpg" alt="Diseño Interior" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">DISEÑO INTERIOR</div>
+                    </div>
+                </div>
+            </div>
+            //slide-4
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-700 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-4.jpg" alt="Integración Territorial" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">INTEGRACIÓN TERRITORIAL</div>
+                    </div>
+                </div>
+            </div>
+            slide-1
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-1.jpg" alt="Plaza Urbana" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">PLAZA URBANA</div>
+                    </div>
+                </div>
+            </div>
+            // slide-2
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-2.png" alt="Centro Cultural" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">CENTRO CULTURAL</div>
+                    </div>
+                </div>
+            </div>
+            // slide-3
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-3.jpg" alt="Diseño Interior" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">DISEÑO INTERIOR</div>
+                    </div>
+                </div>
+            </div>
+            //slide-4
+            <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out"
+                style="width: 280px; height: 180px;">
+                <div
+                    class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-700 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
+                    <img src="assets/img/slide-4.jpg" alt="Integración Territorial" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
+                        <div class="text-white/90 font-light text-lg tracking-wider">INTEGRACIÓN TERRITORIAL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 h-3 flex justify-around">
+            <script>document.write(new Array(40).fill('<div class="w-2 h-2 bg-stone-800 rounded-sm"></div>').join(''));</script>
+        </div>
     </div>
-    
-    <div id="film-scroll-track" class="flex gap-3 px-6 animate-scroll">
-        
-        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
-            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
-                <img src="assets/img/slide-1.jpg" alt="Plaza Urbana" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
-                    <div class="text-white/90 font-light text-lg tracking-wider">PLAZA URBANA</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
-            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
-                <img src="assets/img/slide-2.png" alt="Centro Cultural" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
-                    <div class="text-white/90 font-light text-lg tracking-wider">CENTRO CULTURAL</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
-            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-900 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
-                <img src="assets/img/slide-3.jpg" alt="Diseño Interior" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
-                    <div class="text-white/90 font-light text-lg tracking-wider">DISEÑO INTERIOR</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="relative group flex-shrink-0 transition-all duration-500 ease-in-out" style="width: 280px; height: 180px;">
-            <div class="w-full h-full overflow-hidden rounded-sm border-2 border-stone-700 bg-stone-700 shadow-lg group-hover:scale-110 group-hover:h-[240px] group-hover:z-10 transition-all duration-500">
-                <img src="assets/img/slide-4.jpg" alt="Integración Territorial" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-6 text-center text-white">
-                    <div class="text-white/90 font-light text-lg tracking-wider">INTEGRACIÓN TERRITORIAL</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="absolute bottom-0 left-0 right-0 h-3 flex justify-around">
-        <script>document.write(new Array(40).fill('<div class="w-2 h-2 bg-stone-800 rounded-sm"></div>').join(''));</script>
-    </div>
-</div>
+
     <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -66,34 +130,56 @@
                     <span class="text-stone-600 ml-2">BADAWY</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <button data-id="inicio" onclick="scrollToSection('inicio')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-amber-700 font-medium">Inicio</button>
-                    <button data-id="manifiesto" onclick="scrollToSection('manifiesto')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Manifiesto</button>
-                    <button data-id="experiencia" onclick="scrollToSection('experiencia')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Experiencia</button>
-                    <button data-id="proyectos" onclick="scrollToSection('proyectos')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Proyectos</button>
-                    <button data-id="contacto" onclick="scrollToSection('contacto')" class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Contacto</button>
+                    <button data-id="inicio" onclick="scrollToSection('inicio')"
+                        class="nav-item-btn text-sm font-light tracking-wide transition-colors text-amber-700 font-medium">Inicio</button>
+                    <button data-id="manifiesto" onclick="scrollToSection('manifiesto')"
+                        class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Manifiesto</button>
+                    <button data-id="experiencia" onclick="scrollToSection('experiencia')"
+                        class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Experiencia</button>
+                    <button data-id="proyectos" onclick="scrollToSection('proyectos')"
+                        class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Proyectos</button>
+                    <button data-id="contacto" onclick="scrollToSection('contacto')"
+                        class="nav-item-btn text-sm font-light tracking-wide transition-colors text-stone-600 hover:text-amber-700">Contacto</button>
                 </div>
                 <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-stone-100">
-                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
-                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x hidden"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-menu">
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-x hidden">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
                 </button>
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200">
             <div class="px-4 py-4 space-y-3">
-                <button data-id="inicio" onclick="scrollToSection('inicio')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Inicio</button>
-                <button data-id="manifiesto" onclick="scrollToSection('manifiesto')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Manifiesto</button>
-                <button data-id="experiencia" onclick="scrollToSection('experiencia')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Experiencia</button>
-                <button data-id="proyectos" onclick="scrollToSection('proyectos')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Proyectos</button>
-                <button data-id="contacto" onclick="scrollToSection('contacto')" class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Contacto</button>
+                <button data-id="inicio" onclick="scrollToSection('inicio')"
+                    class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Inicio</button>
+                <button data-id="manifiesto" onclick="scrollToSection('manifiesto')"
+                    class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Manifiesto</button>
+                <button data-id="experiencia" onclick="scrollToSection('experiencia')"
+                    class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Experiencia</button>
+                <button data-id="proyectos" onclick="scrollToSection('proyectos')"
+                    class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Proyectos</button>
+                <button data-id="contacto" onclick="scrollToSection('contacto')"
+                    class="nav-item-btn block w-full text-left px-4 py-2 text-stone-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-colors">Contacto</button>
             </div>
         </div>
     </nav>
 
-    <section id="inicio" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-amber-50 via-stone-50 to-green-50">
+    <section id="inicio" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-bg-pattern">
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-20 left-20 w-72 h-72 bg-amber-600 rounded-full blur-3xl"></div>
             <div class="absolute bottom-20 right-20 w-96 h-96 bg-green-600 rounded-full blur-3xl"></div>
         </div>
+
         <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 md:pt-0">
             <div class="mb-6 text-sm font-light tracking-widest text-amber-700 uppercase">Arquitecta</div>
             <h1 class="text-5xl sm:text-6xl lg:text-7xl font-light mb-6 tracking-tight">
@@ -104,11 +190,17 @@
                 Donde lo técnico encuentra lo humano
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onclick="scrollToSection('proyectos')" class="px-8 py-4 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                <button onclick="scrollToSection('proyectos')"
+                    class="px-8 py-4 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
                     Ver Proyectos
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
                 </button>
-                <button onclick="scrollToSection('contacto')" class="px-8 py-4 bg-white text-amber-700 rounded-full hover:bg-stone-50 transition-all duration-300 border-2 border-amber-700">
+                <button onclick="scrollToSection('contacto')"
+                    class="px-8 py-4 bg-white text-amber-700 rounded-full hover:bg-stone-50 transition-all duration-300 border-2 border-amber-700">
                     Contacto
                 </button>
             </div>
@@ -120,20 +212,31 @@
             <h2 class="text-4xl font-light mb-12 text-center text-amber-900">Manifiesto</h2>
             <div class="space-y-8 text-lg leading-relaxed text-stone-700">
                 <p class="font-light border-l-4 border-amber-600 pl-6 italic text-stone-600">
-                    "La arquitectura es realmente sobre bienestar. Creo que la gente quiere sentir que pertenece a un espacio."
+                    "La arquitectura es realmente sobre bienestar. Creo que la gente quiere sentir que pertenece a un
+                    espacio."
                     <span class="block mt-2 text-sm font-normal text-amber-700">— Zaha Hadid</span>
                 </p>
                 <p>
-                    A lo largo de mi formación y trayectoria en contextos diversos —comunitarios, rurales, mineros e independientes— comprendí que, aunque cada uno responde a dinámicas, realidades y lenguajes completamente distintos, todos convergen en un mismo punto esencial: <span class="font-medium text-amber-800">el diseño no comienza con una línea, sino con una conversación</span>. Nace de observar la identidad del territorio, de reconocer sus particularidades y de conectar con las necesidades reales de las personas que lo habitan.
+                    A lo largo de mi formación y trayectoria en contextos diversos —comunitarios, rurales, mineros e
+                    independientes— comprendí que, aunque cada uno responde a dinámicas, realidades y lenguajes
+                    completamente distintos, todos convergen en un mismo punto esencial: <span
+                        class="font-medium text-amber-800">el diseño no comienza con una línea, sino con una
+                        conversación</span>. Nace de observar la identidad del territorio, de reconocer sus
+                    particularidades y de conectar con las necesidades reales de las personas que lo habitan.
                 </p>
                 <p>
-                    Entiendo la arquitectura como <span class="font-medium text-amber-800">un ente articulador entre las personas y su entorno</span>; un puente entre las necesidades colectivas y la capacidad creativa para transformarlas en soluciones pertinentes y significativas.
+                    Entiendo la arquitectura como <span class="font-medium text-amber-800">un ente articulador entre las
+                        personas y su entorno</span>; un puente entre las necesidades colectivas y la capacidad creativa
+                    para transformarlas en soluciones pertinentes y significativas.
                 </p>
                 <p>
-                    Me mueven los <span class="font-medium text-amber-800">procesos colectivos</span> y la posibilidad de generar cambios concretos a través de intervenciones con enfoque socio-territorial, orientadas a un desarrollo local sostenible en el tiempo.
+                    Me mueven los <span class="font-medium text-amber-800">procesos colectivos</span> y la posibilidad
+                    de generar cambios concretos a través de intervenciones con enfoque socio-territorial, orientadas a
+                    un desarrollo local sostenible en el tiempo.
                 </p>
                 <p class="text-xl font-light text-center pt-8 text-amber-800">
-                    Creo en una arquitectura cercana y consciente; una arquitectura que dialogue con quienes la habitan y que contribuya al bienestar, al encuentro y a fortalecer la identidad de los territorios.
+                    Creo en una arquitectura cercana y consciente; una arquitectura que dialogue con quienes la habitan
+                    y que contribuya al bienestar, al encuentro y a fortalecer la identidad de los territorios.
                 </p>
             </div>
         </div>
@@ -145,79 +248,563 @@
                 Ámbitos de Dominio Profesional
             </h2>
             <p class="text-center text-stone-600 mb-16 max-w-2xl mx-auto">
-                Mi experiencia profesional se articula en tres ámbitos complementarios que convergen en un enfoque técnico, social y territorial.
+                Mi experiencia profesional se articula en tres ámbitos complementarios que convergen en un enfoque
+                técnico, social y territorial.
             </p>
-            <div class="space-y-16" id="experiencia-grid">
+
+            <div class="space-y-16">
+
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-stone-100">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="text-5xl">🏘️</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-medium text-amber-900 mb-3">Planificación Urbana y Desarrollo Local
+                            </h3>
+                            <p class="text-stone-700 leading-relaxed">
+                                Desarrollo proyectos urbanos, integrando diagnósticos, análisis urbano y estrategias de
+                                activación territorial. Mi experiencia se centra en la regeneración de espacios
+                                públicos, la planificación y desarrollo de infraestructura comunitaria y la articulación
+                                con comunidades e instituciones públicas para el desarrollo sostenible de los
+                                territorios.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div class="bg-amber-50 rounded-xl p-6">
+                            <h4 class="text-lg font-medium text-amber-800 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right text-amber-600">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg> Áreas de Dominio
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Análisis y diagnóstico
+                                        urbano–territorial</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Diseño de espacios públicos y
+                                        equipamiento</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Participación ciudadana y metodologías
+                                        colaborativas</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Planificación local, coordinación
+                                        institucional y gestión de proyectos públicos</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Enfoque inclusivo y perspectiva
+                                        comunitaria</span></li>
+                            </ul>
+                        </div>
+                        <div class="bg-stone-50 rounded-xl p-6">
+                            <h4 class="text-lg font-medium text-stone-800 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right text-stone-600">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg> Funciones Desempeñadas
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Formulación y desarrollo de proyectos
+                                        de mejoramiento urbano, espacios públicos e infraestructura</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Desarrollo e implementación de plan de
+                                        intervención territorial, levantamiento socio-territorial y desarrollo de
+                                        metodologías participativas</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Gestión y articulación entre actores
+                                        locales, organizaciones comunitarias y equipos multisectoriales</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Presentación de proyectos ante equipos
+                                        técnicos y autoridades gubernamentales</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Elaboración de memorias técnicas,
+                                        planos y presupuestos para proyectos con financiamiento público</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            
+
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-stone-100">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="text-5xl">📋</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-medium text-amber-900 mb-3">Coordinación de Expedientes Municipales
+                            </h3>
+                            <p class="text-stone-700 leading-relaxed">
+                                Desarrollo y coordino expedientes municipales de diversa complejidad, integrando
+                                normativa urbana, levantamientos arquitectónicos, documentación técnica y tramitación
+                                municipal. Mi trabajo aborda permisos de edificación, obras menores, regularizaciones y
+                                análisis normativos, asegurando eficiencia en los procesos y cumplimiento de cada
+                                requerimiento de la Dirección de Obras Municipales.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div class="bg-amber-50 rounded-xl p-6">
+                            <h4 class="text-lg font-medium text-amber-800 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right text-amber-600">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg> Áreas de Dominio
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Análisis normativo OGUC, LGUC y
+                                        ordenanzas locales</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Formularios INE, antecedentes técnicos
+                                        y levantamientos planimétricos</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Regularización de viviendas y locales
+                                        comerciales</span></li>
+                            </ul>
+                        </div>
+                        <div class="bg-stone-50 rounded-xl p-6">
+                            <h4 class="text-lg font-medium text-stone-800 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right text-stone-600">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg> Funciones Desempeñadas
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Elaboración de documentación técnica,
+                                        planos, memorias y formularios</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Tramitación de expedientes en DOM,
+                                        presencial y en línea</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Revisión normativa y verificación de
+                                        cumplimiento normativo</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Coordinación con clientes, revisores y
+                                        unidades municipales</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Consultas técnicas y resolución de
+                                        observaciones</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-stone-100">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="text-5xl">⚙️</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-medium text-amber-900 mb-3">Mantención de Infraestructura en
+                                Contextos Mineros</h3>
+                            <p class="text-stone-700 leading-relaxed">
+                                Desarrollo de planos constructivos, detalles técnicos y documentación en entornos
+                                mineros de alta exigencia bajo estándares BHP. Asisto en la planificación y mantención
+                                de infraestructura de obras, remodelaciones de espacios de trabajo y actualización de
+                                cartografía para asegurar continuidad operativa y eficiencia en la gestión de activos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div class="bg-amber-50 rounded-xl p-6">
+                            <h4 class="text-lg font-medium text-amber-800 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right text-amber-600">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg> Áreas de Dominio
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Coordinación con equipos
+                                        multidisciplinarios (ingenierías civiles, sanitarias y eléctricas)</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Levantamientos de infraestructura
+                                        operativa, desarrollo técnico de estructuras, redes sanitarias y agua potable y
+                                        remodelación funcional en espacios de trabajo</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-amber-600 mt-1">•</span><span>Estándares de faena BHP, normativa
+                                        sectorial y seguridad industrial</span></li>
+                            </ul>
+                        </div>
+                        <div class="bg-stone-50 rounded-xl p-6">
+                            <h4 class="text-lg font-medium text-stone-800 mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right text-stone-600">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg> Funciones Principales
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Actualización y desarrollo de planos,
+                                        sistemas de redes, detalles técnicos y constructivos</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Desarrollo de propuestas de mejora de
+                                        instalaciones</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Levantamiento de información técnica y
+                                        documentación en terreno</span></li>
+                                <li class="text-stone-700 text-sm flex items-start gap-2"><span
+                                        class="text-stone-600 mt-1">•</span><span>Soporte en planificación de
+                                        mantenciones y mejoras</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="mt-20">
                 <h3 class="text-3xl font-light mb-10 text-center text-amber-900">
-                    Formación Continua
+                    Formación Académica
                 </h3>
-                <div class="grid md:grid-cols-3 gap-6" id="formacion-grid">
-                    </div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="formacion-grid">
+
+    <div class="bg-gradient-to-br from-amber-50 to-stone-50 rounded-xl p-6 border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-sm text-amber-700 font-medium mb-2">2025</div>
+        <h4 class="text-lg font-medium text-stone-900 mb-2">Capacitación en Subdivisión de Predios Rústicos (SPR)</h4>
+        <div class="text-sm text-stone-600 mb-3">Servicio Agrícola y Ganadero (SAG)</div>
+        <p class="text-sm text-stone-600 leading-relaxed">
+            Capacitación técnica sobre normativa y procedimientos actuales para la subdivisión de predios rústicos.
+        </p>
+    </div>
+
+    <div class="bg-gradient-to-br from-amber-50 to-stone-50 rounded-xl p-6 border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-sm text-amber-700 font-medium mb-2">En curso - 2025</div>
+        <h4 class="text-lg font-medium text-stone-900 mb-2">Diplomado en Modelamiento BIM</h4>
+        <div class="text-sm text-stone-600 mb-3">Instituto de Capacitación Euskadi</div>
+        <p class="text-sm text-stone-600 leading-relaxed">
+            Modelamiento digital de edificación (Arquitectura, Estructuras, MEP). Gestión eficiente de obras y coordinación en Revit.
+        </p>
+    </div>
+
+    <div class="bg-gradient-to-br from-amber-50 to-stone-50 rounded-xl p-6 border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-sm text-amber-700 font-medium mb-2">2023</div>
+        <h4 class="text-lg font-medium text-stone-900 mb-2">Diplomado en Desarrollo Local Inclusivo</h4>
+        <div class="text-sm text-stone-600 mb-3">Universidad Alberto Hurtado</div>
+        <p class="text-sm text-stone-600 leading-relaxed">
+            Gestión territorial, diagnóstico socio-territorial, formulación de proyectos públicos y participación ciudadana.
+        </p>
+    </div>
+
+    <div class="bg-gradient-to-br from-amber-50 to-stone-50 rounded-xl p-6 border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-sm text-amber-700 font-medium mb-2">2021</div>
+        <h4 class="text-lg font-medium text-stone-900 mb-2">Diplomado en Coaching con PNL</h4>
+        <div class="text-sm text-stone-600 mb-3">Dharti, Escuela de Crecimiento Personal</div>
+        <p class="text-sm text-stone-600 leading-relaxed">
+            Habilidades comunicacionales, liderazgo personal, gestión de equipos y facilitación de procesos participativos.
+        </p>
+    </div>
+
+    <div class="bg-gradient-to-br from-amber-50 to-stone-50 rounded-xl p-6 border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-sm text-amber-700 font-medium mb-2">2019</div>
+        <h4 class="text-lg font-medium text-stone-900 mb-2">Título de Arquitecta</h4>
+        <div class="text-sm text-stone-600 mb-3">Universidad de Viña del Mar</div>
+        <p class="text-sm text-stone-600 leading-relaxed">
+            Formación profesional integral en arquitectura, urbanismo y diseño territorial.
+        </p>
+    </div>
+
+</div>                
             </div>
         </div>
     </section>
 
+   
     <section id="proyectos" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-light mb-16 text-center text-amber-900">
                 Proyectos Seleccionados
             </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="proyectos-grid">
-                 </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <a href="assets/img/proj-1-a.png" class="glightbox" data-gallery="proyecto1"
+                        data-title="Ágora Marítima: El Desafío"
+                        data-description="El proyecto aborda la degradación del borde costero de Viña del Mar, proponiendo un equipamiento cultural efímero capaz de activar temporalmente sectores subutilizados y desconectados.">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="assets/img/proj-1-a.png" alt="Centro Cultural"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span
+                                    class="text-white bg-amber-700/80 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M15 3h6v6" />
+                                        <path d="M14 10l6.1-6.1" />
+                                        <path d="M9 21H3v-6" />
+                                        <path d="M10 14l-6.1 6.1" />
+                                    </svg>
+                                    Ver Galería
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="assets/img/proj-1-b.png" class="glightbox hidden" data-gallery="proyecto1"
+                        data-title="La Propuesta: Flexibilidad"
+                        data-description="Se plantea un espacio de encuentro abierto y móvil. El diseño incorpora plataformas, recorridos y estructuras desmontables configuradas para responder a distintos usos comunitarios sin alterar el territorio."></a>
+
+                    <a href="assets/img/proj-1-c.png" class="glightbox hidden" data-gallery="proyecto1"
+                        data-title="El Impacto: Integración Social"
+                        data-description="Más que una obra edificada, es una estrategia urbana orientada a reimaginar el borde costero como un espacio integrador, accesible y culturalmente activo mediante intervenciones temporales."></a>
+
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-medium text-amber-700 bg-amber-50 px-3 py-1 rounded-full">Proyecto
+                                de Título</span>
+                            <span class="text-xs text-stone-500">2019</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-amber-900 mb-2">Centro de Extensión Cultural Efímero</h3>
+                        <p class="text-sm text-stone-600 mb-2">Viña del Mar</p>
+                        <p class="text-stone-700 text-sm leading-relaxed line-clamp-2">Ágora marítima efímera para la
+                            activación cultural del borde costero.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <a href="assets/img/proj-2-a.png" class="glightbox" data-gallery="proyecto2"
+                        data-title="Villa Los Cántaros: Diagnóstico"
+                        data-description="Este proyecto surge del deterioro y abandono del espacio público, caracterizado por la falta de áreas verdes y equipamiento, lo que impedía el uso comunitario y debilitaba la convivencia barrial.">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="assets/img/proj-2-a.png" alt="Villa Los Cántaros"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span
+                                    class="text-white bg-amber-700/80 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">Ver
+                                    Galería</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="assets/img/proj-2-b.png" class="glightbox hidden" data-gallery="proyecto2"
+                        data-title="Intervención Participativa"
+                        data-description="A través de un diagnóstico con los vecinos, recuperamos el espacio incorporando sombra, mobiliario, juegos y accesibilidad universal, respondiendo directamente a las necesidades locales."></a>
+
+                    <a href="assets/img/proj-2-c.png" class="glightbox hidden" data-gallery="proyecto2"
+                        data-title="Resultado: Cohesión Social"
+                        data-description="La intervención busca fortalecer la identidad comunitaria y el sentido de pertenencia, transformando la plazuela abandonada en un punto activo de recreación y vida para la Villa."></a>
+
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="text-xs font-medium text-amber-700 bg-amber-50 px-3 py-1 rounded-full">Comunitario</span>
+                            <span class="text-xs text-stone-500">2023</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-amber-900 mb-2">Mejoramiento Villa Los Cántaros</h3>
+                        <p class="text-sm text-stone-600 mb-2">Paihuano</p>
+                        <p class="text-stone-700 text-sm leading-relaxed line-clamp-2">Recuperación participativa de
+                            espacio público y áreas verdes.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <a href="assets/img/proj-3-a.jpg" class="glightbox" data-gallery="proyecto3"
+                        data-title="Plaza Miguel Apey: Renovación"
+                        data-description="El proyecto busca renovar un espacio público central que presentaba infraestructura deteriorada, luminarias en mal estado y áreas verdes desorganizadas, afectando la calidad de vida.">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="assets/img/proj-3-a.jpg" alt="Plaza Miguel Apey"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span
+                                    class="text-white bg-amber-700/80 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">Ver
+                                    Galería</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="assets/img/proj-3-b.jpg" class="glightbox hidden" data-gallery="proyecto3"
+                        data-title="Modernización Funcional"
+                        data-description="Modernizamos el espacio mediante rutas accesibles, reorganización de áreas verdes, nuevo mobiliario urbano, recambio de luminarias y cierre perimetral para mayor seguridad."></a>
+
+                    <a href="assets/img/proj-3-c.jpg" class="glightbox hidden" data-gallery="proyecto3"
+                        data-title="Potencial Urbano"
+                        data-description="El objetivo final es recuperar un espacio urbano clave, garantizando accesibilidad universal y un equipamiento moderno que responda a las necesidades actuales del barrio Chanchoqui."></a>
+
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="text-xs font-medium text-amber-700 bg-amber-50 px-3 py-1 rounded-full">Comunitario</span>
+                            <span class="text-xs text-stone-500">2023</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-amber-900 mb-2">Mejoramiento Plaza Miguel Apey</h3>
+                        <p class="text-sm text-stone-600 mb-2">Paihuano</p>
+                        <p class="text-stone-700 text-sm leading-relaxed line-clamp-2">Modernización integral con
+                            enfoque en accesibilidad universal.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
-    
-    <section class="py-24 bg-gradient-to-b from-amber-50 to-stone-50">
+
+    <!-- <section class="py-24 bg-gradient-to-b from-amber-50 to-stone-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-light mb-12 text-center text-amber-900">
-                Arte en Resina Ecológica
+                Resin Artist
             </h2>
             <div class="bg-white rounded-2xl p-8 shadow-lg">
                 <div class="flex flex-col md:flex-row gap-8 items-center">
                     <div class="flex-1">
                         <h3 class="text-2xl font-medium text-amber-800 mb-4">Mi Práctica Creativa</h3>
                         <p class="text-stone-700 leading-relaxed mb-4">
-                            Mi práctica creativa se extiende al trabajo con resina ecológica, donde reutilizo materiales para crear piezas artísticas únicas. Esta disciplina paralela refuerza mi compromiso con la <span class="font-medium text-amber-800">sostenibilidad</span> y la capacidad de <span class="font-medium text-amber-800">transformar lo cotidiano en expresión</span>.
+                            Siempre he sido muy curiosa en el área artística. Desde pequeña me ha fascinado aprender
+                            manualidades, técnicas y oficios nuevos. Así llegué al mundo de la resina, en un momento en
+                            que necesitaba detenerme y hacer algo que me conectara conmigo misma.
                         </p>
-                        <a href="[LINK AL PORTFOLIO DE RESINA]" target="_blank" class="text-amber-700 hover:text-amber-900 flex items-center gap-1 transition-colors">
-                            Ver Portfolio de Arte
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        <p class="text-stone-700 leading-relaxed mb-4">
+                            Ser una persona observadora y sensible a los detalles y las texturas hizo que este material
+                            se volviera ideal para mí. Muchas de las piezas que he creado mezclan <span
+                                class="font-medium text-amber-800">resina con madera reciclada</span>, porque me importa
+                            darle una nueva vida a aquello que ya cumplió su ciclo.
+                        </p>
+                        <p class="text-stone-700 leading-relaxed mb-6">
+                            Mis creaciones son mi espacio seguro, una forma de bajar el ritmo, ordenar mis pensamientos
+                            y permitir que algo se exprese a través de mis manos. Es mi terapia, mi momento de quietud y
+                            libertad.
+                        </p>
+                        <a href="assets/pdf/portfolio-resin-artist.pdf" download
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Descargar Portfolio Completo
                         </a>
                     </div>
-                    <div class="w-full md:w-64 h-64 bg-gradient-to-br from-amber-200 via-green-200 to-stone-200 rounded-xl flex items-center justify-center overflow-hidden">
-                         <img src="assets/img/resina-muestra.jpg" alt="Muestra de Arte en Resina" class="w-full h-full object-cover">
+                    <div
+                        class="w-full md:w-64 h-64 bg-gradient-to-br from-amber-200 via-green-200 to-stone-200 rounded-xl flex items-center justify-center overflow-hidden">
+                        <img src="assets/img/resina-muestra.jpg" alt="Muestra de Arte en Resina"
+                            class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <section class="py-24 bg-gradient-to-b from-amber-50 to-stone-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-light mb-12 text-center text-amber-900">
+            Arte en Resina Ecológica
+        </h2>
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                
+                <div>
+                    <h3 class="text-2xl font-medium text-amber-800 mb-4">Mi Práctica Creativa</h3>
+                    <p class="text-stone-700 leading-relaxed mb-4">
+                        Siempre he sido muy curiosa en el área artística. Desde pequeña me ha fascinado aprender manualidades, técnicas y oficios nuevos. Así llegué al mundo de la resina, en un momento en que necesitaba detenerme y hacer algo que me conectara conmigo misma.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed mb-4">
+                        Ser una persona observadora y sensible a los detalles y las texturas hizo que este material se volviera ideal para mí. Muchas de las piezas que he creado mezclan <span class="font-medium text-amber-800">resina con madera reciclada</span>, dándole nueva vida a lo que ya cumplió su ciclo.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <button onclick="document.querySelector('.resina-trigger').click()" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-800 text-white rounded-lg hover:bg-amber-900 transition-colors font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M14 10l6.1-6.1"/><path d="M9 21H3v-6"/><path d="M10 14l-6.1 6.1"/></svg>
+                            Ver Galería de Arte
+                        </button>
+
+                        <a href="assets/pdf/portfolio-resin-artist.pdf" download class="inline-flex items-center gap-2 px-6 py-3 border-2 border-amber-800 text-amber-800 rounded-lg hover:bg-amber-50 transition-colors font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative group cursor-pointer overflow-hidden rounded-xl h-80 shadow-md">
+                    <a href="assets/img/resina-1.jpg" class="glightbox resina-trigger" data-gallery="resina" data-title="Arte en Resina" data-description="Exploración de texturas y reciclaje.">
+                        <img src="assets/img/resina-1.jpg" alt="Muestra de Arte" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                            <span class="text-white border border-white/50 px-4 py-2 rounded-full backdrop-blur-sm">Ver Galería Completa (11 Fotos)</span>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="assets/img/resina-2.png" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-3.png" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-4.png" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-5.jpeg" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-6.png" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-7.jpeg" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-8.jpeg" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-9.png" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-10.jpg" class="glightbox hidden" data-gallery="resina"></a>
+                <a href="assets/img/resina-11.jpeg" class="glightbox hidden" data-gallery="resina"></a>
+
+            </div>
+        </div>
+    </div>
+</section>
 
     <section id="contacto" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-light mb-12 text-center text-amber-900">Conversemos</h2>
-            
+
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-light mb-6 text-stone-800">Información de Contacto</h3>
                     <div class="space-y-4">
-                        <a href="mailto:abadawyf@gmail.com" class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
-                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                        <a href="mailto:abadawyf@gmail.com"
+                            class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
+                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-mail">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg></div>
                             <span>abadawyf@gmail.com</span>
                         </a>
-                        <a href="tel:+56930639918" class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
-                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.04-6.04 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3 2h3a2 2 0 0 1 2 2.18 17.02 17.02 0 0 0 1.25 4.86 2 2 0 0 1-1.27 2.17l-.54.21a2 2 0 0 0-.8 2.6L8 20l2 2 6-6 4-4a2 2 0 0 0 0-2.82 2 2 0 0 0 2.82 0z"/></svg></div>
+                        <a href="tel:+56930639918"
+                            class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
+                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.04-6.04 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3 2h3a2 2 0 0 1 2 2.18 17.02 17.02 0 0 0 1.25 4.86 2 2 0 0 1-1.27 2.17l-.54.21a2 2 0 0 0-.8 2.6L8 20l2 2 6-6 4-4a2 2 0 0 0 0-2.82 2 2 0 0 0 2.82 0z" />
+                                </svg></div>
                             <span>+56 9 3063 9918</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/afaf-balawy-fernandez" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
-                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></div>
+                        <a href="https://www.linkedin.com/in/afaf-balawy-fernandez" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-3 text-stone-700 hover:text-amber-700 transition-colors group">
+                            <div class="p-3 bg-amber-50 rounded-lg group-hover:bg-amber-100 transition-colors"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-linkedin">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect width="4" height="12" x="2" y="9" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg></div>
                             <span>LinkedIn</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link opacity-0 group-hover:opacity-100 transition-opacity"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-external-link opacity-0 group-hover:opacity-100 transition-opacity">
+                                <path d="M15 3h6v6" />
+                                <path d="M10 14 21 3" />
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            </svg>
                         </a>
                     </div>
-                    
+
                     <div class="mt-8 p-6 bg-amber-50 rounded-xl">
                         <h4 class="font-medium text-amber-900 mb-2">Áreas de Interés</h4>
                         <ul class="text-sm text-stone-700 space-y-1">
@@ -228,31 +815,39 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-2xl font-light mb-6 text-stone-800">Envíame un Mensaje</h3>
-                    <form id="contactForm" action="https://formspree.io/f/[TU_ENDPOINT_AQUI]" method="POST" class="space-y-4">
+                    <form id="contactForm" action="https://formspree.io/f/mwpgaarw" method="POST"
+                        class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-stone-700 mb-2">Nombre</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all" placeholder="Tu nombre">
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                                placeholder="Tu nombre">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-stone-700 mb-2">Email</label>
-                            <input type="email" id="email" name="_replyto" required class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all" placeholder="tu@email.com">
+                            <input type="email" id="email" name="_replyto" required
+                                class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                                placeholder="tu@email.com">
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium text-stone-700 mb-2">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all resize-none" placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all resize-none"
+                                placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
                         </div>
                         <input type="hidden" name="_subject" value="[CONTACTO WEB] Nuevo Proyecto de Afaf Badawy">
 
-                        <button type="submit" id="submitButton" class="w-full px-6 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors font-medium">
+                        <button type="submit" id="submitButton"
+                            class="w-full px-6 py-4 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors font-medium">
                             Enviar Mensaje
                         </button>
-                        
+
                         <div id="formStatus" class="mt-2 text-sm text-center"></div>
                         <p class="text-xs text-stone-500 text-center mt-3">
-                            * Mensaje enviado sin backend PHP.
+                            <!-- * Mensaje enviado sin backend PHP. -->
                         </p>
                     </form>
                 </div>
@@ -273,24 +868,50 @@
                         Arquitecta · Desarrollo Territorial · Gestión Municipal
                     </p>
                 </div>
-                
+
                 <div class="flex gap-4">
-                    <a href="mailto:abadawyf@gmail.com" class="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
-                    <a href="https://www.linkedin.com/in/afaf-balawy-fernandez" target="_blank" rel="noopener noreferrer" class="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    <a href="mailto:abadawyf@gmail.com"
+                        class="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-colors"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/afaf-balawy-fernandez" target="_blank"
+                        rel="noopener noreferrer"
+                        class="p-3 bg-stone-800 rounded-full hover:bg-amber-700 transition-colors"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg></a>
                 </div>
             </div>
-            
+
             <div class="mt-8 pt-8 border-t border-stone-800 text-center text-sm text-stone-500">
-                <p>© 2024 Afaf Badawy Fernández · Todos los derechos reservados</p>
+                <p>© 2025 Afaf Badawy Fernández · Todos los derechos reservados</p>
                 <p class="mt-2">Diseñado con propósito y narrativa</p>
             </div>
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         lucide.createIcons();
     </script>
-    <script src="assets/js/main.js"></script> 
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Inicializar GLightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
 </body>
+
 </html>

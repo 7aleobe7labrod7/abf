@@ -12,7 +12,7 @@
     }
     100% {
         /* El 50% de traslación es para simular el loop 
-           infinito, ya que duplicamos el contenido en JS. */
+           infinito, ya que duplicamos el contenido en HTML. */
         transform: translateX(-50%); 
     }
 }
@@ -28,6 +28,19 @@
 }
 
 /* -------------------------------------- */
+/* Fondo Hero Header (Marca de Agua)      */
+/* -------------------------------------- */
+
+.hero-bg-pattern {
+    /* **CORRECCIÓN:** Se usa .png para el archivo que subiste */
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(250, 250, 250, 0.9)), url('../img/hero-bg-pattern.png') no-repeat center center;
+    background-size: cover;
+    background-position: center center;
+    /* Esto mezcla el degradado con la imagen para el efecto sutil */
+    background-blend-mode: lighten; 
+}
+
+/* -------------------------------------- */
 /* Utilidades y Comportamiento           */
 /* -------------------------------------- */
 
@@ -37,7 +50,7 @@ html {
 }
 
 /* Clases de utilidad para los colores que Tailwind puede no interpretar en el CDN
-   Estas clases son necesarias para que el diseño se vea como en React/Tailwind. */
+   (Necesario para replicar el diseño de React/Tailwind) */
 
 .text-amber-700 { color: #b54708; }
 .text-amber-900 { color: #78350f; }
@@ -52,4 +65,3 @@ html {
 .bg-stone-900 { background-color: #1c1917; }
 .border-amber-700 { border-color: #b54708; }
 .hover\:bg-amber-50:hover { background-color: #fffbeb; }
-/* Puedes añadir más si notas que algún color o gradiente falla al subirlo */
